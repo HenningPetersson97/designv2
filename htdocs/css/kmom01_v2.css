@@ -1,0 +1,277 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/* poor-mans normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+/* container */
+.wrap-all {
+  background-color: #ccc;
+}
+.outer-wrap {
+  width: 100%;
+  overflow: auto;
+}
+.inner-wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+.row::after {
+  clear: both;
+}
+/* Header */
+.region-header-col-1 {
+  float: left;
+  width: 30%;
+}
+.region-header-col-2 {
+  float: left;
+  width: 60%;
+  margin-right: 20px;
+}
+.site-logo {
+  display: none;
+}
+.my-navbar {
+  padding-top: 10px;
+  background-color: #104c91;
+  list-style-type: none;
+  font-size: 20px;
+  border: 1px solid;
+}
+.my-navbar li {
+  display: inline;
+  padding: 2px 10px;
+}
+.my-navbar a {
+  color: white;
+}
+.outer-wrap-flash {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Main */
+.inner-wrap-main {
+  padding: 40px 0;
+}
+.article {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.article p {
+  margin-top: 20px;
+}
+/* Footer */
+.outer-wrap-footer {
+  background-color: #104c91;
+  color: white;
+}
+.inner-wrap-footer {
+  padding: 40px 0;
+}
+.region-footer > .block {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 serif;
+}
+img {
+  max-width: 100%;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.wrap-all {
+  background-color: #efc9af;
+}
+.outer-wrap {
+  width: 100%;
+  overflow: auto;
+}
+.inner-wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+.row::after {
+  clear: both;
+}
+.site-logo {
+  display: none;
+}
+/* Header */
+.region-header-col-1 {
+  float: left;
+  width: 30%;
+}
+.region-header-col-2 {
+  float: left;
+  width: 60%;
+  margin-right: 20px;
+}
+.my-navbar {
+  padding-top: 10px;
+  background-color: #104c91;
+  list-style-type: none;
+  font-size: 20px;
+  border: 1px solid;
+}
+.my-navbar li {
+  display: inline;
+  padding: 2px 10px;
+}
+.my-navbar a {
+  color: white;
+}
+.outer-wrap-flash {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Main */
+.inner-wrap-main {
+  padding: 40px 0;
+}
+.article {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.article p {
+  margin-top: 20px;
+}
+/* Footer */
+.outer-wrap-footer {
+  background-color: #104c91;
+  color: white;
+}
+.inner-wrap-footer {
+  padding: 40px 0;
+}
+.region-footer > .block {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+* Navbar
+*/
+@media screen and (max-width: 960px) {
+  .rm-desktop a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .rm-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .regin-header-col-3 {
+    width: 15%;
+  }
+  .regin-header-col-2 {
+    width: 70%;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
