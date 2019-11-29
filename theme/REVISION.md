@@ -3,7 +3,7 @@ Revision history
 
 
 
-v1.0.1 (2018-11-12)
+v3.0.0 (2019-11-29)
 ------------------------
 
 * Released with kmom03 for design-course.
