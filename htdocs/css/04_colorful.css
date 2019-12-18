@@ -4892,6 +4892,9 @@ template {
   border: 1px solid;
   color: #b300a1;
 }
+a {
+  color: #b300a1;
+}
 .my-navbar li {
   display: inline;
   padding: 2px 10px;

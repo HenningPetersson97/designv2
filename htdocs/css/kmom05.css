@@ -4833,7 +4833,7 @@ template {
   display: inline-block;
 }
 .wrap-all {
-  background-color: #565f63;
+  background-color: #151314;
   overflow-x: hidden;
 }
 .row::after {
@@ -4844,7 +4844,7 @@ template {
 }
 /* Header */
 .outer-wrap-header {
-  background-color: #565f63;
+  background-color: #151314;
   overflow: visible;
 }
 .region-header-col-1 {
@@ -4886,21 +4886,21 @@ template {
 .my-navbar {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #565f63;
+  background-color: #151314;
   list-style-type: none;
   font-size: 20px;
   border: 1px solid;
-  color: #cee6f0;
+  color: #fff;
 }
 a {
-  color: #cee6f0;
+  color: #fff;
 }
 .my-navbar li {
   display: inline;
   padding: 2px 10px;
 }
 .my-navbar a {
-  color: #cee6f0;
+  color: #fff;
 }
 .outer-wrap-flash {
   background-size: cover;
@@ -4953,6 +4953,122 @@ a {
 }
 .region-sidebar-right {
   margin-left: 4.6875%;
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 11px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
 }
 /**
 * Responsive 1, 2, 3
@@ -5024,7 +5140,7 @@ a {
   margin-right: 0.52083333%;
 }
 .footer-column a {
-  color: #cee6f0;
+  color: #fff;
 }
 .site-footer {
   display: inline;
@@ -5034,8 +5150,8 @@ a {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: #565f63;
-  color: #cee6f0;
+  background-color: #151314;
+  color: #fff;
 }
 .inner-wrap-footer {
   padding: 40px 0;
@@ -5110,6 +5226,18 @@ a {
   border: 1px solid #6cbac4;
   color: #111;
 }
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /**
  * A responsive menu.
  */
@@ -5387,14 +5515,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #565f63;
+  background-color: #151314;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #cee6f0;
-  background-color: #565f63;
-  font: 16px/1.375 monospace;
+  color: #fff;
+  background-color: #151314;
+  font: 16px/1.375 sans-serif;
 }
 h1,
 h2,
@@ -5690,7 +5818,7 @@ h4,
 h5,
 h6 {
   margin-top: 24px;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 p {
   margin-bottom: 24px;
