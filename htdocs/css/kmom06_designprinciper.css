@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
 /**
 Import mixins.
@@ -4785,6 +4785,7 @@ template {
  * General layout
 */
 .row {
+  width: 100%;
   display: block;
   width: 101.04166667%;
   margin-left: -0.52083333%;
@@ -4799,7 +4800,7 @@ template {
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1100px;
+  max-width: 1400px;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4833,7 +4834,7 @@ template {
   display: inline-block;
 }
 .wrap-all {
-  background-color: #151314;
+  background-color: #fff;
   overflow-x: hidden;
 }
 .row::after {
@@ -4844,8 +4845,11 @@ template {
 }
 /* Header */
 .outer-wrap-header {
-  background-color: #151314;
+  background-color: #fff;
   overflow: visible;
+}
+.inner-wrap-header {
+  width: 100%;
 }
 .region-header-col-1 {
   display: inline;
@@ -4853,6 +4857,9 @@ template {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+.inner-wrap.inner-wrap-flash img {
+  width: 100%;
 }
 .region-header-col-3 {
   display: inline;
@@ -4864,7 +4871,7 @@ template {
 .region-header-col-2 {
   display: inline;
   float: left;
-  width: 57.29166667%;
+  width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
@@ -4886,18 +4893,20 @@ template {
 .my-navbar {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #151314;
+  background-color: #9027e8;
   list-style-type: none;
   font-size: 20px;
-  border: 1px solid;
-  color: #fff;
+  color: #151314;
+  float: left;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 a {
-  color: #fff;
+  color: #151314;
 }
 .my-navbar li {
   display: inline;
   padding: 2px 10px;
+  color: #fff;
 }
 .my-navbar a {
   color: #fff;
@@ -4953,6 +4962,122 @@ a {
 }
 .region-sidebar-right {
   margin-left: 4.6875%;
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 11px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
 }
 /**
 * Responsive 1, 2, 3
@@ -5022,8 +5147,11 @@ a {
   width: 32.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: #9027e8;
 }
-.footer-column a {
+.footer-column a,
+h4 {
   color: #fff;
 }
 .site-footer {
@@ -5033,9 +5161,12 @@ a {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.article {
+  margin-bottom: 300px;
+}
 .outer-wrap-footer {
-  background-color: #151314;
-  color: #fff;
+  background-color: #fff;
+  color: #151314;
 }
 .inner-wrap-footer {
   padding: 40px 0;
@@ -5110,6 +5241,18 @@ a {
   border: 1px solid #6cbac4;
   color: #111;
 }
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
 /**
  * A responsive menu.
  */
@@ -5387,13 +5530,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #151314;
+  background-color: #fff;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #fff;
-  background-color: #151314;
+  color: #151314;
+  background-color: #fff;
   font: 16px/1.375 sans-serif;
 }
 h1,

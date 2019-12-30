@@ -14,7 +14,7 @@ Min me-sida i kursen design
 =========================
 
 
-[FIGURE src="image/henning2.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/henning2.jpg?w=500" class="left w35" caption="Bild på mig"]
 
 Hej jag heter Henning Petersson jag är 22 år och jag studerar på BTH (Blekinges Tekniska Högskola). Jag kommer ursprungligen från Växjö där bodde jag med min familj som består av mamma, pappa, stora syster, lilla syster och tre hundar. Nu bor jag i Karlskrona för att det ska vara smidigt att ta sig till skolan. Under tiden som jag bodde i Växjö har jag testat på det mesta inom sport t.ex. tennis, pingis, Yu YuTzu och innebandy men inget som jag riktigt fastnade för.
 

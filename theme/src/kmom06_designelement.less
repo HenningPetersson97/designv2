@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
 
 /**
@@ -37,7 +37,7 @@ Import mixins.
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/layout_kmom04.less";
+@import "layout/layout_kmom06.less";
 
 
 /**
@@ -49,7 +49,12 @@ Import mixins.
 @import "layout/responsive.less";
 @import "layout/regions.less";     // To add style for ?regions
 
-
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
 
 /**
  * A responsive menu.
@@ -105,7 +110,7 @@ Import mixins.
 @mainFontWeight: 400;
 @headerFontWeight: 400;
 
-@import "module/minimalistic.less";
+@import "module/kmom06v1.less";
 
  // Magic number and base fontsize
  @magicNumber:  22px;  // 24px
